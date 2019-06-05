@@ -1,0 +1,3 @@
+﻿CREATE LOGIN [additlabs]
+    WITH PASSWORD = N'tc|cB~alE{6Xu|gt!wzZfBidmsFT7_&#$!~<Recdwzj.fIkc', SID = 0xC5153194962CEF4699561F44E3A8D5E7, DEFAULT_LANGUAGE = [us_english], CHECK_POLICY = OFF;
+

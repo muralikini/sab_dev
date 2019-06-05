@@ -1,0 +1,12 @@
+﻿CREATE TABLE [dbo].[OPS_LMVJn] (
+    [LMVJn]          INT  IDENTITY (1, 1) NOT NULL,
+    [FK_LMVID]       INT  NOT NULL,
+    [FK_LMVDriverId] INT  NOT NULL,
+    [StatusFlag]     INT  NULL,
+    [CreatedDate]    DATE NULL,
+    [ModifiedDate]   DATE NULL,
+    CONSTRAINT [PK_OPS_LMVJn] PRIMARY KEY CLUSTERED ([LMVJn] ASC),
+    CONSTRAINT [FK_OPS_LMVJn_OPS_LMV] FOREIGN KEY ([FK_LMVID]) REFERENCES [dbo].[OPS_LMV] ([LMVId]),
+    CONSTRAINT [FK_OPS_LMVJn_OPS_LMVDrivers] FOREIGN KEY ([FK_LMVDriverId]) REFERENCES [dbo].[OPS_LMVDrivers] ([LMVDriverId])
+);
+

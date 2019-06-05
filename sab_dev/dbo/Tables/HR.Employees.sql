@@ -1,0 +1,28 @@
+﻿CREATE TABLE [dbo].[HR.Employees] (
+    [EmpId]              INT            IDENTITY (1, 1) NOT NULL,
+    [SABId]              INT            NOT NULL,
+    [Name]               NVARCHAR (MAX) NOT NULL,
+    [PhoneNo]            NVARCHAR (15)  NULL,
+    [Email]              NVARCHAR (50)  NULL,
+    [Country]            NVARCHAR (50)  NULL,
+    [Department]         NVARCHAR (50)  NULL,
+    [Category]           NVARCHAR (50)  NULL,
+    [Grade]              NVARCHAR (50)  NULL,
+    [Designation]        NVARCHAR (50)  NULL,
+    [Religion]           NVARCHAR (50)  NULL,
+    [Nationality]        NVARCHAR (50)  NULL,
+    [Sex]                NVARCHAR (50)  NOT NULL,
+    [MaritalStatus]      NVARCHAR (50)  NULL,
+    [DOB]                DATE           NULL,
+    [DOJ]                DATE           NULL,
+    [DOE]                DATE           NULL,
+    [DOC]                DATE           NULL,
+    [PassportNo]         NVARCHAR (50)  NOT NULL,
+    [PassportIssueDate]  DATE           NULL,
+    [PassportExpiryDate] DATE           NULL,
+    [IqamaNo]            NVARCHAR (50)  NULL,
+    [IqamaExpiryDate]    DATE           NULL,
+    [Status]             INT            NULL,
+    CONSTRAINT [PK_HR.Employees] PRIMARY KEY CLUSTERED ([EmpId] ASC)
+);
+
