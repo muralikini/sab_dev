@@ -886,4 +886,7 @@
     <Build Include="dbo\User Defined Types\tbl_accesspermission.sql" />
     <Build Include="Security\Permissions.sql" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="ChangeLog.txt" />
+  </ItemGroup>
 </Project>
